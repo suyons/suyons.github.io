@@ -1,6 +1,6 @@
 baseURL = "https://suyons.github.io/"
 locale = "en-us"
-title = "suyon's blog"
+title = "suyons blog"
 theme = "PaperMod"
 paginate = 10
 enableRobotsTXT = true
@@ -13,9 +13,9 @@ buildFuture = false
 
 [params]
   env = "production"
-  author = "suyon"
-  description = "A developer's notes on code, tools, and things worth sharing."
-  keywords = ["blog", "developer", "tech"]
+  author = "Sooyoung Kim"
+  description = "DevOps engineer with 5+ years in IT, writing about infrastructure, deployment, and the hard-won lessons from financial sector projects."
+  keywords = ["devops", "infrastructure", "docker", "aws", "blog"]
   defaultTheme = "auto"
   disableThemeToggle = false
   ShowReadingTime = true
@@ -35,8 +35,8 @@ buildFuture = false
   tocopen = false
 
   [params.homeInfoParams]
-    Title = "Hello, World! 👋"
-    Content = "A developer's notes on code, tools, and things worth sharing."
+    Title = "Sooyoung Kim — DevOps Engineer"
+    Content = "5+ years in IT. 3 years in infrastructure engineering, 2 years in DevOps at financial IT projects. Writing about what actually works in production."
 
   [[params.socialIcons]]
     name = "github"
@@ -50,7 +50,7 @@ buildFuture = false
     disableHLJS = true
 
   [params.label]
-    text = "suyon's blog"
+    text = "suyons blog"
 
 [menu]
   [[menu.main]]
