@@ -5,20 +5,21 @@ url: "/about/"
 summary: "about"
 ---
 
-## Hi, I'm suyon 👋
+## I'm Sooyoung Kim, a DevOps engineer.
 
-I'm a software developer who enjoys writing about code, tools, and ideas that make development more fun and productive.
+I work in the space between writing code and keeping it running — infrastructure, deployment pipelines, cloud architecture, and the unglamorous but critical work of making things actually ship.
 
-### What I write about
+5+ years in IT, with 3 years in infrastructure engineering and 2 years in DevOps at financial IT projects — the kind where the network is air-gapped, the client's security team reviews everything, and "just deploy it to the cloud" isn't an option.
 
-- **Programming** — tips, patterns, and things I wish I knew earlier
-- **Tools & Workflow** — CLIs, editors, and productivity setups
-- **Learning in public** — notes from things I'm currently studying
+This blog is where I write down what I figured out, mostly so I don't have to figure it out again.
+
+---
 
 ### Find me online
 
 - GitHub: [github.com/suyons](https://github.com/suyons)
+- Email: [suymyy@gmail.com](mailto:suymyy@gmail.com)
 
 ---
 
-This blog is built with [Hugo](https://gohugo.io/) and the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme, deployed on [GitHub Pages](https://pages.github.com/).
+Built with [Hugo](https://gohugo.io/) + [PaperMod](https://github.com/adityatelange/hugo-PaperMod), deployed on [GitHub Pages](https://pages.github.com/).
