@@ -2,7 +2,7 @@
 title: "Solving Hairpin NAT on a Cloud VM: The Windows Loopback Adapter Trick"
 date: 2026-05-13
 draft: false
-tags: ["networking", "windows-server", "nat", "cloud", "onlyoffice", "loopback"]
+tags: ["networking", "windows", "nat", "cloud", "onlyoffice", "loopback"]
 categories: ["Infrastructure"]
 description: "Cloud VMs can't reach their own public IP by default — a restriction called hairpin NAT. This post explains why it happens and walks through the Windows Loopback Adapter workaround, including the 'Weak Host' model fix that Windows requires."
 showToc: true
