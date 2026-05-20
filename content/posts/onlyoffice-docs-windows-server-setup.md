@@ -2,7 +2,7 @@
 title: "Self-Hosting OnlyOffice Docs on Windows Server: Setup, Redis Pitfalls, and Font Management"
 date: 2026-05-13
 draft: false
-tags: ["onlyoffice", "windows-server", "redis", "jwt", "document-server", "edms"]
+tags: ["onlyoffice", "windows", "redis", "jwt", "document-server", "edms"]
 categories: ["Infrastructure"]
 description: "A practical guide to installing OnlyOffice Docs on a Windows Server VM, wiring up JWT authentication, debugging the Redis ECONNRESET failure that causes the editor to spin forever, and reloading custom fonts."
 showToc: true

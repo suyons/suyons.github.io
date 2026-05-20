@@ -2,7 +2,7 @@
 title: "Enabling SSH on Windows Server for Lightweight Remote Management"
 date: 2026-05-19
 draft: false
-tags: ["windows-server", "ssh", "sftp", "openssh", "powershell", "rdp"]
+tags: ["windows", "ssh", "sftp", "openssh", "powershell", "rdp"]
 categories: ["Infrastructure"]
 description: "How to enable the OpenSSH Server feature on Windows Server, connect from any SSH client, and use SFTP via FileZilla — useful when RDP's single-session limit makes collaborative server work painful."
 showToc: true
