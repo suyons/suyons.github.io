@@ -5,20 +5,21 @@ url: "/about/"
 summary: "about"
 ---
 
-## I'm Sooyoung Kim, a DevOps engineer.
+## I'm Sooyoung Kim
 
-I work in the space between writing code and keeping it running — infrastructure, deployment pipelines, cloud architecture, and the unglamorous but critical work of making things actually ship.
+Infrastructure and platform engineer with experience across endpoint management, enterprise IT support, application backend operations, and self-hosted DevOps.
 
-5+ years in IT, with 3 years in infrastructure engineering and 2 years in DevOps at financial IT projects — the kind where the network is air-gapped, the client's security team reviews everything, and "just deploy it to the cloud" isn't an option.
+I've built and operated full production systems from scratch — from database schema and business logic to on-premise network design, compliance-constrained deployment, and day-to-day operations. My environments have included air-gapped financial networks, GMP-regulated pharmaceutical platforms, and military-scale endpoint infrastructure.
 
-This blog is where I write down what I figured out, mostly so I don't have to figure it out again.
+Outside work, I run a personal home server on Proxmox VE — multiple containerized services, Nginx reverse proxy, Cloudflare tunnel, all built from scratch. I do it because I find it genuinely interesting. Everything I learn goes on my blog.
 
 ---
 
 ### Find me online
 
 - GitHub: [github.com/suyons](https://github.com/suyons)
-- Email: [suymyy@gmail.com](mailto:suymyy@gmail.com)
+- LinkedIn: [linkedin.com/in/suyons](https://linkedin.com/in/suyons)
+- Email: [suyons@pm.me](mailto:suyons@pm.me)
 
 ---
 
