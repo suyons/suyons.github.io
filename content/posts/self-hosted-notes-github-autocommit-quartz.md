@@ -208,6 +208,139 @@ ufw allow 4000/tcp
 
 Access at `http://<server-ip>:4000`. Point a reverse proxy at it for HTTPS and a clean domain.
 
+## Optional: Automatic `git pull` Triggered by Push from Another Machine
+
+If you edit notes on a second machine (not the Ubuntu server) and push to GitHub, the server won't automatically pull those changes — inotifywait only reacts to local filesystem events. You can close this gap with a GitHub webhook that triggers `git pull` on the server whenever a push lands on the `note` repository.
+
+### How It Works
+
+```
+Another machine
+  └─ git push → GitHub
+                  └─ POST https://<your-webhook-domain>/hooks/note-pull
+                              └─ git pull on Ubuntu Server
+```
+
+### Install webhook
+
+```bash
+apt-get install -y webhook
+```
+
+The `webhook` binary (github.com/adnanh/webhook) listens for HTTP POST requests and executes a configured script when the trigger rules match.
+
+Disable the default system unit — we'll create a dedicated one:
+
+```bash
+systemctl disable --now webhook
+```
+
+### The Pull Script
+
+Create `/usr/local/bin/note-pull.sh`:
+
+```bash
+#!/bin/bash
+git -C /root/note pull origin HEAD
+```
+
+```bash
+chmod +x /usr/local/bin/note-pull.sh
+```
+
+### Hook Configuration
+
+Create `/etc/webhook/hooks.json`:
+
+```json
+[
+  {
+    "id": "note-pull",
+    "execute-command": "/usr/local/bin/note-pull.sh",
+    "command-working-directory": "/root/note",
+    "response-message": "pull triggered",
+    "trigger-rule": {
+      "and": [
+        {
+          "match": {
+            "type": "payload-hmac-sha256",
+            "secret": "<your-webhook-secret>",
+            "parameter": {
+              "source": "header",
+              "name": "X-Hub-Signature-256"
+            }
+          }
+        },
+        {
+          "match": {
+            "type": "value",
+            "value": "push",
+            "parameter": {
+              "source": "header",
+              "name": "X-GitHub-Event"
+            }
+          }
+        }
+      ]
+    }
+  }
+]
+```
+
+The `payload-hmac-sha256` rule verifies the `X-Hub-Signature-256` header that GitHub signs with the shared secret, so only genuine GitHub requests can trigger the pull. Generate a secret with:
+
+```bash
+openssl rand -hex 32
+```
+
+Use the same value in this file and in the GitHub webhook settings.
+
+### Systemd Service
+
+Create `/etc/systemd/system/note-webhook.service`:
+
+```ini
+[Unit]
+Description=GitHub webhook listener for /root/note pull
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/webhook -hooks /etc/webhook/hooks.json -port 5300 -verbose
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+systemctl daemon-reload
+systemctl enable --now note-webhook
+```
+
+The listener binds on `0.0.0.0:5300`. Point a reverse proxy at it so GitHub can reach it over HTTPS.
+
+### GitHub Webhook Settings
+
+In your `note` repository: Settings → Webhooks → Add webhook.
+
+| Field | Value |
+|---|---|
+| Payload URL | `https://<your-webhook-domain>/hooks/note-pull` |
+| Content type | `application/json` |
+| Secret | the value from `openssl rand -hex 32` above |
+| Events | Just the push event |
+
+### Caveat: Cloudflare Zero Trust Access
+
+If the webhook domain is protected by Cloudflare Zero Trust Access, GitHub's requests will be redirected to the Cloudflare login page and never reach the server. You need to bypass Access for the `/hooks/note-pull` path.
+
+The cleanest fix is to create a second Access application scoped to `<your-webhook-domain>/hooks/note-pull` with a **Bypass** policy. Cloudflare matches the most specific hostname and path first, so this exempts the webhook endpoint while leaving everything else protected.
+
+If your Access policy is applied to a wildcard domain (e.g. `*.example.com`), create an explicit application for the exact webhook hostname with the Bypass policy — exact hostnames take precedence over wildcards.
+
 ## Wrapping Up
 
 - The git-based approach gives full version history and zero sync risk — all writes flow one direction (server → GitHub).
