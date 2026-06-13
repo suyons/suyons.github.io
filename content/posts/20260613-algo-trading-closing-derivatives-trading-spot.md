@@ -1,6 +1,6 @@
 ---
 title: "Algorithmic Trading - Why I'm Closing My Derivatives Accounts and Trading Spot"
-date: 2026-06-13T13:00:00
+date: 2026-06-12
 draft: false
 tags: ["trading", "quant", "cfd", "futures", "retrospective", "investing"]
 categories: ["Trading"]
