@@ -1,0 +1,106 @@
+/* Enriched 404 page */
+.not-found-page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 2rem 0 4rem;
+    text-align: center;
+}
+
+.not-found-page .nf-code {
+    font-size: clamp(96px, 22vw, 180px);
+    font-weight: 700;
+    line-height: 1;
+    color: var(--primary);
+    opacity: 0.12;
+    letter-spacing: 0.05em;
+}
+
+.not-found-page .nf-title {
+    margin: -0.5rem 0 0.75rem;
+    font-size: 1.6rem;
+    color: var(--primary);
+}
+
+.not-found-page .nf-desc {
+    margin: 0 auto 2rem;
+    max-width: 32rem;
+    color: var(--secondary);
+    line-height: 1.6;
+}
+
+.not-found-page .nf-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.not-found-page .nf-btn {
+    padding: 0.5rem 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius, 8px);
+    color: var(--primary);
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.not-found-page .nf-btn:hover {
+    background: var(--tertiary);
+}
+
+.not-found-page .nf-btn-primary {
+    background: var(--primary);
+    color: var(--theme);
+    border-color: var(--primary);
+}
+
+.not-found-page .nf-btn-primary:hover {
+    opacity: 0.85;
+    background: var(--primary);
+}
+
+.not-found-page .nf-recent {
+    text-align: left;
+}
+
+.not-found-page .nf-recent-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--secondary);
+    margin-bottom: 0.75rem;
+}
+
+.not-found-page .nf-recent-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.not-found-page .nf-recent-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.not-found-page .nf-recent-list li:last-child {
+    border-bottom: none;
+}
+
+.not-found-page .nf-recent-list a {
+    color: var(--primary);
+}
+
+.not-found-page .nf-recent-list a:hover {
+    box-shadow: 0 1px 0 0 var(--primary);
+}
+
+.not-found-page .nf-recent-list time {
+    flex-shrink: 0;
+    font-size: 0.85rem;
+    color: var(--secondary);
+}
