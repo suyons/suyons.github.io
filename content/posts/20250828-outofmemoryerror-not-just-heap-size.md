@@ -3,7 +3,7 @@ title: "OutOfMemoryError Is Not Always Fixed by Increasing Heap Size"
 date: 2025-08-28
 draft: false
 tags: ["jvm", "java", "tomcat", "performance", "debugging", "springboot"]
-categories: ["DevOps"]
+categories: ["Backend"]
 description: "When a Spring Boot application throws OutOfMemoryError, the first instinct is to increase -Xmx. Often that is wrong — and sometimes it makes things worse. Here is how to diagnose which type of OOM you are dealing with and what to actually fix."
 showToc: true
 ---

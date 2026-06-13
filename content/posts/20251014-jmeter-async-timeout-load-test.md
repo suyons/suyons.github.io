@@ -3,7 +3,7 @@ title: "JMeter Load Testing an Async Video Upload API: Results from a Real Timeo
 date: 2025-10-14
 draft: false
 tags: ["jmeter", "testing", "springboot", "async", "jvm"]
-categories: ["DevOps"]
+categories: ["Backend"]
 description: "After patching an async timeout handling bug in a video analysis API, we ran a JMeter load test to quantify the improvement. This post covers the test setup, what changed in the error distribution, what didn't change, and what the JVM heap graph revealed."
 showToc: true
 ---

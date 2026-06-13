@@ -3,7 +3,7 @@ title: "Designing a Sync/Async Hybrid API When I had a Hard Timeout"
 date: 2025-01-20
 draft: false
 tags: ["api", "async", "springboot", "architecture", "timeout"]
-categories: ["Development"]
+categories: ["Backend"]
 description: "When a customer-facing API must respond within 60 seconds but the backend operation can take up to several minutes, a pure sync or pure async model both fail in different ways. Here is how we designed a hybrid approach and the architectural decisions that shaped it."
 showToc: true
 ---

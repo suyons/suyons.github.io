@@ -3,7 +3,7 @@ title: "JPA vs MyBatis: Choosing the Right Data Access Layer for Enterprise Proj
 date: 2025-06-19
 draft: false
 tags: ["java", "springboot", "jpa", "mybatis", "database", "oracle"]
-categories: ["DevOps"]
+categories: ["Backend"]
 description: "A practical comparison of JPA (Hibernate) and MyBatis for Spring Boot projects in enterprise environments, with a focus on complex query requirements, team SQL fluency, and maintenance overhead."
 showToc: true
 ---
