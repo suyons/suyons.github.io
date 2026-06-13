@@ -3,7 +3,7 @@ title: "Integrating with Legacy Systems via ESB: Patterns and Pitfalls"
 date: 2025-05-22
 draft: false
 tags: ["esb", "integration", "springboot", "java", "enterprise"]
-categories: ["DevOps"]
+categories: ["Backend"]
 description: "What Enterprise Service Bus (ESB) integration looks like in a real financial IT project: message format negotiation, request logging, validation queries, and the coordination overhead you don't see in the architecture diagram."
 showToc: true
 ---

@@ -3,7 +3,7 @@ title: "Oracle Database Practical Tips for Enterprise Projects"
 date: 2025-05-08
 draft: false
 tags: ["oracle", "database", "sql", "sqlplus", "enterprise"]
-categories: ["DevOps"]
+categories: ["Databases"]
 description: "Practical Oracle Database tips accumulated from financial IT projects: client compatibility issues, useful SQL for auditing schema and sessions, and common gotchas that cost time."
 showToc: true
 ---
