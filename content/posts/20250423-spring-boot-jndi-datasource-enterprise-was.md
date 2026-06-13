@@ -3,7 +3,7 @@ title: "Moving Spring Boot from Inline Datasources to JNDI for Enterprise WAS De
 date: 2025-04-23
 draft: false
 tags: ["springboot", "jndi", "datasource", "enterprise", "was", "deployment"]
-categories: ["Development"]
+categories: ["Backend"]
 description: "In enterprise environments, the application server — not the application — manages database connections. Here is how to move a Spring Boot app from hardcoded connection strings to JNDI-bound datasources, and the gotchas that trip people up during the transition."
 showToc: true
 ---

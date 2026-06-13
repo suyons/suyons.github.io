@@ -3,7 +3,7 @@ title: "Self-Hosted Notes: Auto Git Commit + Quartz Web Viewer on Ubuntu Server"
 date: 2026-05-23
 draft: false
 tags: ["obsidian", "quartz", "git", "ubuntu", "self-hosted", "bash", "inotify", "systemd"]
-categories: ["DevOps"]
+categories: ["Infrastructure"]
 description: "How I set up an Obsidian vault on Ubuntu Server with automatic git commit/push on every save, and Quartz as a web viewer — after abandoning SilverBullet and Syncthing."
 showToc: true
 ---

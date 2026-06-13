@@ -10,7 +10,7 @@ showToc: true
 
 ## What Air-Gapped Means in Practice
 
-Financial institutions in Korea operate under strict network segregation rules. The internal network is physically isolated from the internet — no `apt`, no `pip`, no direct GitHub pulls. This is what practitioners call a **폐쇄망** (closed network), and it fundamentally changes how you set up and maintain a development environment.
+Financial institutions in Korea operate under strict network segregation rules. The internal network is physically isolated from the internet — no `apt`, no `pip`, no direct GitHub pulls. This is what practitioners call a **closed network**, and it fundamentally changes how you set up and maintain a development environment.
 
 You do not SSH into the server and run `git pull`. You build a WAR file locally, hand it to someone who physically carries it to the server room, and wait while they deploy it. Or if you are lucky, you have a shared file server with a controlled transfer channel. Either way, feedback loops are long.
 
