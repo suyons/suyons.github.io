@@ -1,6 +1,6 @@
 ---
 title: "Algorithmic Trading - The Honest Backtest That Still Beat Live by 10 Points"
-date: 2026-06-12
+date: 2026-05-30
 draft: false
 tags: ["trading", "backtesting", "quant", "python", "execution"]
 categories: ["Trading"]
