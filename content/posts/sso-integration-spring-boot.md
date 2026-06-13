@@ -3,7 +3,7 @@ title: "Implementing SSO Integration and Session Authentication in Spring Boot"
 date: 2025-07-03
 draft: false
 tags: ["springboot", "security", "sso", "authentication", "java"]
-categories: ["DevOps"]
+categories: ["Security"]
 description: "How SSO integration with a token-based system works in a Spring Boot WAS: token validation via a shared JAR, employee lookup, Spring Security configuration, and common failure modes in a closed-network enterprise environment."
 showToc: true
 ---

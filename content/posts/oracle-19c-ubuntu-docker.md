@@ -3,7 +3,7 @@ title: "Installing Oracle Database 19c on Ubuntu with Docker"
 date: 2025-09-17
 draft: false
 tags: ["oracle", "docker", "ubuntu", "database"]
-categories: ["DevOps"]
+categories: ["Databases"]
 description: "A step-by-step guide to installing Oracle Database 19c on Ubuntu using Docker, including PDB management and data migration via dump files."
 showToc: true
 ---
