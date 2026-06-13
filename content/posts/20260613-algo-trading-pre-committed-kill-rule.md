@@ -1,6 +1,6 @@
 ---
 title: "Algorithmic Trading - The Kill Rule I Wrote Before I Needed It"
-date: 2026-06-13
+date: 2026-06-13T14:00:00
 draft: false
 tags: ["trading", "quant", "risk-management", "statistics", "decision-making"]
 categories: ["Trading"]

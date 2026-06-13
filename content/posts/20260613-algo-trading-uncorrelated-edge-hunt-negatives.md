@@ -1,6 +1,6 @@
 ---
 title: "Algorithmic Trading - Every Uncorrelated Edge I Tested, and Why Only One Survived"
-date: 2026-06-13
+date: 2026-06-13T15:00:00
 draft: false
 tags: ["trading", "quant", "research", "intermarket", "statistical-arbitrage"]
 categories: ["Trading"]
