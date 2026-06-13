@@ -1,5 +1,5 @@
 ---
-title: "Your pm2 Dump Pins a node Path. fnm Deletes It on Reboot."
+title: "Windows Server Troubleshooting - Your pm2 Dump Pins a node Path. fnm Deletes It on Reboot."
 date: 2026-06-12
 draft: false
 tags: ["pm2", "nodejs", "fnm", "windows-server", "process-manager", "devops"]

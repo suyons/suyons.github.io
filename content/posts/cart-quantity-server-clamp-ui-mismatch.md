@@ -1,9 +1,9 @@
 ---
-title: "The Cart Shows 9999. The Server Stored 999."
+title: "React Troubleshooting - The Cart Shows 9999. The Server Stored 999."
 date: 2026-06-08
 draft: false
 tags: ["react", "react-query", "optimistic-ui", "ecommerce", "validation", "qa"]
-categories: ["DevOps"]
+categories: ["Web Development"]
 description: "A QA pass let me set a cart quantity to 9999. The API quietly clamped it to 999 — and the screen kept showing 9999, with a line total to match. When the server normalizes an input, an optimistic UI that doesn't reconcile is rendering a number the server already threw away."
 showToc: true
 ---

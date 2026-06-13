@@ -1,9 +1,9 @@
 ---
-title: "Your Next.js Middleware Trusts the Cookie, Not the Session"
+title: "Session Security - Your Next.js Middleware Trusts the Cookie, Not the Session"
 date: 2026-05-29
 draft: false
 tags: ["nextjs", "authentication", "security", "middleware", "trpc", "qa"]
-categories: ["DevOps"]
+categories: ["Security"]
 description: "A QA pass on a Next.js App Router shop turned up a route guard that only checked whether a session cookie existed. Setting app-session=1234 walked straight past it — even though the data API correctly returned 401. Here's why that gap appears, why it's still a bug when the API holds, and the logout 'ghost session' that comes with it."
 showToc: true
 ---

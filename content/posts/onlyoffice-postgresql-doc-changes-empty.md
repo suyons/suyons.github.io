@@ -1,9 +1,9 @@
 ---
-title: "Why OnlyOffice Needs Its Own PostgreSQL — and Why doc_changes Is Almost Always Empty"
+title: "Self-Hosting - Why OnlyOffice Needs Its Own PostgreSQL — and Why doc_changes Is Almost Always Empty"
 date: 2026-05-28
 draft: false
 tags: ["onlyoffice", "postgresql", "architecture", "self-hosted", "edms", "troubleshooting"]
-categories: ["DevOps"]
+categories: ["Infrastructure"]
 description: "When you integrate OnlyOffice Docs with a system that already stores the files, it still insists on its own PostgreSQL. Here's what that database actually does, why its main table sits empty, and the Windows Server gotcha when you try to inspect it remotely."
 showToc: true
 ---

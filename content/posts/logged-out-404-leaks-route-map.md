@@ -1,9 +1,9 @@
 ---
-title: "Your Logged-Out 404 Leaks Your Route Map"
+title: "Next.js Security - Your Logged-Out 404 Leaks Your Route Map"
 date: 2026-06-05
 draft: false
 tags: ["nextjs", "authentication", "authorization", "security", "middleware", "qa"]
-categories: ["DevOps"]
+categories: ["Security"]
 description: "On a QA pass through a private, employees-only Next.js shop, a logged-out request to a nonexistent URL returned a 404 page instead of the login redirect. That looks correct. For a fully private app it's a route-enumeration leak, and it comes from allowlisting the wrong set of routes."
 showToc: true
 ---
