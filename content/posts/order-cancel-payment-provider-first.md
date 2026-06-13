@@ -1,9 +1,9 @@
 ---
-title: "Cancel the Payment Before You Cancel the Order"
+title: "Payments Integration - Cancel the Payment Before You Cancel the Order"
 date: 2026-06-02
 draft: false
 tags: ["payments", "tosspayments", "distributed-systems", "prisma", "nextjs", "qa"]
-categories: ["DevOps"]
+categories: ["Backend"]
 description: "A QA checklist line — 'when the provider returns 4xx on cancel, the order must stay PAID' — encodes a real two-system consistency bug. If you flip the order status before the refund clears, a rejected cancellation leaves you with an order marked cancelled and money you never gave back."
 showToc: true
 ---

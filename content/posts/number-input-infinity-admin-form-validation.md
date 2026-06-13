@@ -1,9 +1,9 @@
 ---
-title: "Your Number Input Accepts Infinity"
+title: "Form Validation - Your Number Input Accepts Infinity"
 date: 2026-06-03
 draft: false
 tags: ["validation", "zod", "react", "forms", "typescript", "qa"]
-categories: ["DevOps"]
+categories: ["Web Development"]
 description: "On a QA pass through an admin product form, three numeric fields accepted values no product should have: a price of infinity, a 5000% discount, and a sale price above the list price. Two of those share one root cause, and the third is a gotcha in how <input type=number> and JSON treat large numbers."
 showToc: true
 ---
