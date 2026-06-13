@@ -86,5 +86,6 @@ The rest of this series is about that gap, told one failure at a time:
 - A model trained on one stop loss and traded on another.
 - Every uncorrelated edge I went looking for, and why only one survived.
 - The kill rule I wrote before I needed it, so I'd actually pull the trigger.
+- The conclusion I'm acting on: closing the derivatives accounts and trading spot.
 
 If you only read one, read the third. The same-bar re-entry bug is the most general lesson in the whole project, and almost nobody's backtest controls for it.
