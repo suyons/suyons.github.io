@@ -1,9 +1,9 @@
 ---
-title: "MSSQL Used `+` to Join Strings. MySQL Read It as Math."
+title: "Database Migration - MSSQL Used `+` to Join Strings. MySQL Read It as Math."
 date: 2026-06-09
 draft: false
 tags: ["mysql", "mssql", "sql", "database-migration", "json", "views"]
-categories: ["DevOps"]
+categories: ["Databases"]
 description: "Migrating a backend from SQL Server to MySQL, the schema and the application code were the easy part. The bugs that survived the migration were hiding inside the database views — where MSSQL's `+` string concatenation silently became MySQL arithmetic, and a column holding an empty string blew up JSON_TABLE."
 showToc: true
 ---

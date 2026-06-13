@@ -1,9 +1,9 @@
 ---
-title: "A Search for One Word That Kept Returning Another"
+title: "Elasticsearch Troubleshooting - A Search for One Word That Kept Returning Another"
 date: 2026-06-01
 draft: false
 tags: ["search", "i18n", "korean", "tokenization", "elasticsearch", "qa"]
-categories: ["DevOps"]
+categories: ["Backend"]
 description: "On a QA pass, a product search for one Korean word kept surfacing a different word that only shared its first syllable. The cause was syllable-level tokenization with OR matching, and the reason my first fix did nothing was the reindex trap. Here's why CJK search breaks this way and how to actually fix it."
 showToc: true
 ---

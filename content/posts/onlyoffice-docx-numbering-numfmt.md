@@ -1,9 +1,9 @@
 ---
-title: "Why OnlyOffice Renders a Numbered List as Bare Dots: The Missing w:numFmt Tag"
+title: "OOXML Troubleshooting - Why OnlyOffice Renders a Numbered List as Bare Dots: The Missing w:numFmt Tag"
 date: 2026-05-27
 draft: false
 tags: ["onlyoffice", "ooxml", "docx", "word", "xml", "troubleshooting"]
-categories: ["DevOps"]
+categories: ["Backend"]
 description: "A .docx whose multilevel list renders as 1. 1.1 1.1.1 in Microsoft Word but shows only bare dots in OnlyOffice. The cause is a missing w:numFmt tag, and the explanation is a difference in how lenient each renderer is about the OOXML spec."
 showToc: true
 ---

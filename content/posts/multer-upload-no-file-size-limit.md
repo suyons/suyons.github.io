@@ -1,9 +1,9 @@
 ---
-title: "Your File Upload Has No Size Limit"
+title: "Express Security - Your File Upload Has No Size Limit"
 date: 2026-06-06
 draft: false
 tags: ["nodejs", "express", "multer", "validation", "uploads", "security"]
-categories: ["DevOps"]
+categories: ["Security"]
 description: "A 227 MiB document went through an upload endpoint that was supposed to cap files at 50 MB. The cap existed in the code — it just never ran. Two things conspired: multer's default file-size limit is Infinity, and the guard meant to enforce the cap read a property that doesn't exist yet when it runs."
 showToc: true
 ---

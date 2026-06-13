@@ -1,5 +1,5 @@
 ---
-title: "Closing RDP Kept My pm2 Daemon Alive. Signing Out Killed It."
+title: "Windows Server Troubleshooting - Closing RDP Kept My pm2 Daemon Alive. Signing Out Killed It."
 date: 2026-06-13
 draft: false
 tags: ["pm2", "nodejs", "windows-server", "nssm", "rdp", "devops"]

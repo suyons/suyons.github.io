@@ -1,5 +1,5 @@
 ---
-title: "Your RDP Session Inherited the Desktop You're Already Logged Into"
+title: "Linux RDP Troubleshooting - Your RDP Session Inherited the Desktop You're Already Logged Into"
 date: 2026-06-11
 draft: false
 tags: ["linux", "ubuntu", "xrdp", "wayland", "gnome", "remote-desktop"]
