@@ -42,7 +42,7 @@ This is the kind of thing that's invisible in normal use because no honest user 
 
 ## Where the 404 comes from
 
-The leak isn't in the 404 page. It's in the matcher. The middleware in this app (the same file I [wrote about before](/posts/nextjs-middleware-cookie-presence-auth/) for a different reason) guards an explicit list of protected prefixes:
+The leak isn't in the 404 page. It's in the matcher. The middleware in this app (the same file I [wrote about before](/posts/20260529-nextjs-middleware-cookie-presence-auth/) for a different reason) guards an explicit list of protected prefixes:
 
 ```ts
 // middleware.ts — allowlisting the PROTECTED routes
