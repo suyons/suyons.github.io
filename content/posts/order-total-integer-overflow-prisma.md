@@ -3,7 +3,7 @@ title: "Next.js Troubleshooting - An Order Total That Didn't Fit in an Integer"
 date: 2026-05-31
 draft: false
 tags: ["prisma", "postgresql", "validation", "nextjs", "trpc", "qa"]
-categories: ["Databases"]
+categories: ["Web Development"]
 description: "On a QA pass I set an order quantity to 999,999 and checkout returned a 500. The cause was a money column typed as a 32-bit integer in Prisma, with no quantity cap to keep the total under its ceiling. Here's why Prisma Int bites for currency, and the two fixes you need."
 showToc: true
 ---
