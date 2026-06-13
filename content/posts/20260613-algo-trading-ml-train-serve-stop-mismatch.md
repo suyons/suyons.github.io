@@ -1,6 +1,6 @@
 ---
 title: "Algorithmic Trading - A Model Trained on One Stop, Traded on Another"
-date: 2026-06-12
+date: 2026-06-02
 draft: false
 tags: ["trading", "machine-learning", "lightgbm", "quant", "mlops"]
 categories: ["Trading"]

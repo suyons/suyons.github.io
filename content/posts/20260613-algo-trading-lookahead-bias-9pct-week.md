@@ -1,6 +1,6 @@
 ---
 title: "Algorithmic Trading - The +9%/Week Backtest That Was Reading the Future"
-date: 2026-05-27
+date: 2026-05-26
 draft: false
 tags: ["trading", "backtesting", "lookahead-bias", "quant", "python"]
 categories: ["Trading"]
