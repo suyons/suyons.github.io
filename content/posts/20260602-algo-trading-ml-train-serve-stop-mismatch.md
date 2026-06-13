@@ -20,7 +20,7 @@ For this to mean anything, the model's notion of "win" at serve time has to be t
 
 **Decision one (training):** I trained the model on historical trades labeled win/loss under a **fixed stop and target** — 8 points of stop, 10 points of target. Gold traded around 2,900 when I set those. The model learned "given these features, what's the probability this trade reaches +10 before -8."
 
-**Decision two (serving):** Months later, for completely sound reasons covered in [the thin-margin post](/posts/20260613-algo-trading-pre-committed-kill-rule/), I switched the live stop and target from fixed points to **ATR-scaled** distances: stop = 3× the 14-period ATR, target = 1.25× the stop. Gold had run to around 4,900 by then, and a fixed 8-point stop had decayed into noise — it was getting tagged on random wiggles. ATR-scaling keeps the stop proportional to actual volatility. Correct call.
+**Decision two (serving):** Months later, for completely sound reasons covered in [the thin-margin post](/posts/20260608-algo-trading-pre-committed-kill-rule/), I switched the live stop and target from fixed points to **ATR-scaled** distances: stop = 3× the 14-period ATR, target = 1.25× the stop. Gold had run to around 4,900 by then, and a fixed 8-point stop had decayed into noise — it was getting tagged on random wiggles. ATR-scaling keeps the stop proportional to actual volatility. Correct call.
 
 Each decision was right. Together they were a disaster, because **I never retrained the model.** The live system was now serving an ATR-stop reality to a model that had only ever seen fixed-8/10 outcomes. It was answering a question nobody was asking: "what's the probability this reaches +10/-8," for trades that would actually exit at ±3×ATR.
 
