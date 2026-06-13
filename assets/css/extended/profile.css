@@ -1,0 +1,15 @@
+/* Home info: circular profile image at the upper-left of the header */
+.home-info .entry-header {
+    display: flex;
+    flex-direction: column-reverse; /* image directly above the title */
+    align-items: flex-start; /* left-aligned, on both desktop and mobile */
+    gap: 1rem;
+}
+
+.home-info .home-profile-img {
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
