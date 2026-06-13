@@ -3,7 +3,7 @@ title: "Deploying on AWS EC2 with a Custom Domain and HTTPS"
 date: 2025-01-23
 draft: false
 tags: ["aws", "ec2", "https", "nextjs", "loadbalancer"]
-categories: ["DevOps"]
+categories: ["Infrastructure"]
 description: "A step-by-step guide to deploying a Next.js app on EC2, connecting a custom domain via Route 53, issuing an SSL certificate with ACM, and terminating HTTPS at the load balancer."
 showToc: true
 ---

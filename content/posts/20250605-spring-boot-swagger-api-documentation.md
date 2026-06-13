@@ -3,7 +3,7 @@ title: "Spring Boot API Documentation with Swagger: Version Gotchas and Best Pra
 date: 2025-06-05
 draft: false
 tags: ["springboot", "swagger", "openapi", "java", "documentation"]
-categories: ["DevOps"]
+categories: ["Backend"]
 description: "A practical guide to integrating Swagger (springdoc-openapi) into a Spring Boot project, including the version compatibility matrix between Spring Boot 2.x and 3.x, common configuration errors, and tips for generating useful API documentation."
 showToc: true
 ---

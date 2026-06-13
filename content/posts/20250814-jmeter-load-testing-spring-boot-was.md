@@ -3,7 +3,7 @@ title: "JMeter Load Testing for a Spring Boot WAS: Setup, Scenarios, and Interpr
 date: 2025-08-14
 draft: false
 tags: ["jmeter", "testing", "springboot", "performance", "java", "tomcat"]
-categories: ["DevOps"]
+categories: ["Backend"]
 description: "How to set up Apache JMeter for load testing a Spring Boot WAS in a financial project: test plan structure, validating results with SQL, interpreting thread pool behavior, and common pitfalls."
 showToc: true
 ---
