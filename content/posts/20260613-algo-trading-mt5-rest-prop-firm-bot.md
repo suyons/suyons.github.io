@@ -1,6 +1,6 @@
 ---
 title: "Algorithmic Trading - Building a Gold Bot on a Broker's REST API"
-date: 2026-06-13T19:00:00
+date: 2026-06-01
 draft: false
 tags: ["trading", "mt5", "python", "lightgbm", "quant", "backtesting"]
 categories: ["Trading"]
