@@ -43,6 +43,14 @@ buildFuture = false
     url = "https://github.com/suyons"
 
   [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/suyons"
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:su02ga@outlook.com"
+
+  [[params.socialIcons]]
     name = "rss"
     url = "/index.xml"
 
