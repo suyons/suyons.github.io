@@ -10,7 +10,7 @@ showToc: true
 
 ## The problem with deciding to quit
 
-Every post in this series has been a diagnosis: a [lookahead leak](/posts/20260613-algo-trading-lookahead-bias-9pct-week/), a [sequence artifact](/posts/20260613-algo-trading-backtest-live-gap-same-bar-reentry/), a [model skew](/posts/20260613-algo-trading-ml-train-serve-stop-mismatch/), an [edge hunt](/posts/20260613-algo-trading-uncorrelated-edge-hunt-negatives/) that came up nearly empty. Diagnosis is the easy part. The hard part is the decision the diagnosis implies: stop.
+Every post in this series has been a diagnosis: a [lookahead leak](/posts/20260526-algo-trading-lookahead-bias-9pct-week/), a [sequence artifact](/posts/20260530-algo-trading-backtest-live-gap-same-bar-reentry/), a [model skew](/posts/20260602-algo-trading-ml-train-serve-stop-mismatch/), an [edge hunt](/posts/20260605-algo-trading-uncorrelated-edge-hunt-negatives/) that came up nearly empty. Diagnosis is the easy part. The hard part is the decision the diagnosis implies: stop.
 
 It's hard for a specific reason. A losing strategy and an unlucky winning strategy look identical in the short run. When you're down, you can always tell yourself it's variance — and sometimes it is. So you keep going, and "I'll give it a bit more data" becomes the phrase that funds every blown account in the world. The person deciding whether to quit is the same person who spent seven months building the thing. That person is not objective.
 
@@ -48,7 +48,7 @@ I added it up across every preserved live session. All-in, the strategy was net 
 
 It's worth being precise, because the strategy isn't *fraudulent* — it's just thin. The edge is genuine in the sense that it's regime-durable: across 2021-2024, broken into half-years, the win rate cleared breakeven in every single one (46-49%) and the profit factor was above 1 everywhere. It's not curve-fit garbage. It's a real ~2-point edge over breakeven.
 
-But a 2-point edge does not survive a 5.5-point sequence gap. The same-bar re-entry artifact alone is bigger than the entire edge. That's the whole tragedy in one sentence: the strategy is real, and the gap between simulation and reality is larger than the strategy. There's no internal lever left to pull — I tested them all and wrote up the [negatives](/posts/20260613-algo-trading-uncorrelated-edge-hunt-negatives/). Making the stop wider lowers the margin. Gating by regime deletes winners. The only honest move is to stop risking money on it.
+But a 2-point edge does not survive a 5.5-point sequence gap. The same-bar re-entry artifact alone is bigger than the entire edge. That's the whole tragedy in one sentence: the strategy is real, and the gap between simulation and reality is larger than the strategy. There's no internal lever left to pull — I tested them all and wrote up the [negatives](/posts/20260605-algo-trading-uncorrelated-edge-hunt-negatives/). Making the stop wider lowers the margin. Gating by regime deletes winners. The only honest move is to stop risking money on it.
 
 ## Why I keep the demo running anyway
 
@@ -62,4 +62,4 @@ If you take one thing from the whole series: **decide what failure looks like, i
 
 I built an algorithmic trading system for seven and a half months. It works exactly as designed and loses money, because the design's edge is smaller than the unavoidable gap between testing and trading. Writing the kill rule first is what let me say that plainly instead of feeding it another month. That's the skill the project was actually for.
 
-The kill rule ended the strategy. The next and final post is the bigger conclusion it forced — [why I'm closing the derivatives accounts entirely and moving to spot](/posts/20260613-algo-trading-closing-derivatives-trading-spot/).
+The kill rule ended the strategy. The next and final post is the bigger conclusion it forced — [why I'm closing the derivatives accounts entirely and moving to spot](/posts/20260612-algo-trading-closing-derivatives-trading-spot/).

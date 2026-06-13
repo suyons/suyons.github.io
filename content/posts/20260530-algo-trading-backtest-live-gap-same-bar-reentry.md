@@ -10,7 +10,7 @@ showToc: true
 
 ## A gap that wasn't supposed to exist
 
-After I killed the lookahead bug (that's [the previous post](/posts/20260613-algo-trading-lookahead-bias-9pct-week/)), I had a backtest I trusted. Signals computed on closed bars, orders filled on the next bar's open, lag-robust under the one-bar check. The ML model on top of it was trained on clean out-of-sample data. I deployed it.
+After I killed the lookahead bug (that's [the previous post](/posts/20260526-algo-trading-lookahead-bias-9pct-week/)), I had a backtest I trusted. Signals computed on closed bars, orders filled on the next bar's open, lag-robust under the one-bar check. The ML model on top of it was trained on clean out-of-sample data. I deployed it.
 
 The live account ran at a **41.1% win rate**. The backtest, on the same period, printed **50.8%**.
 
@@ -70,7 +70,7 @@ So tick simulation was less faithful than the bar engine, not more. The bar-fait
 
 ## The waterfall, end to end
 
-Putting this together with the model issue from [the next post](/posts/20260613-algo-trading-ml-train-serve-stop-mismatch/), the full decomposition from optimistic backtest to live reality looks like this:
+Putting this together with the model issue from [the next post](/posts/20260602-algo-trading-ml-train-serve-stop-mismatch/), the full decomposition from optimistic backtest to live reality looks like this:
 
 ```
 optimistic fixed-stop backtest      53.5%
