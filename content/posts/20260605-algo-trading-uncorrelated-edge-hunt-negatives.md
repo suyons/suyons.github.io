@@ -10,7 +10,7 @@ showToc: true
 
 ## The premise: thin edge needs an uncorrelated friend
 
-By this point I'd established the uncomfortable truth: my gold strategy had a real but thin edge — about two points of win rate over the 44.4% breakeven — and thin edges don't survive the [backtest-to-live gap](/posts/20260613-algo-trading-backtest-live-gap-same-bar-reentry/). Every internal lever I tried to widen it (wider stops, regime gates, consensus filters, tick-velocity gates) was refuted. The strategy was as good as it was going to get, and that wasn't good enough.
+By this point I'd established the uncomfortable truth: my gold strategy had a real but thin edge — about two points of win rate over the 44.4% breakeven — and thin edges don't survive the [backtest-to-live gap](/posts/20260530-algo-trading-backtest-live-gap-same-bar-reentry/). Every internal lever I tried to widen it (wider stops, regime gates, consensus filters, tick-velocity gates) was refuted. The strategy was as good as it was going to get, and that wasn't good enough.
 
 So I went looking for an *uncorrelated* edge. The math here is the one genuinely cheerful fact in the whole project: two strategies with modest Sharpe ratios that are uncorrelated combine better than one great strategy alone, because their drawdowns don't line up. A 0.5-Sharpe stream that's uncorrelated to my gold book is worth more to me than a 1.0-Sharpe stream that draws down at the same times. So the target wasn't "find a better strategy." It was "find a strategy whose PnL is uncorrelated with the one I have."
 
