@@ -3,7 +3,7 @@ title: "Diagnosing a Windows BSOD Caused by NVIDIA TDR Failure"
 date: 2026-05-07
 draft: false
 tags: ["windows", "bsod", "nvidia", "debugging", "event-viewer", "minidump"]
-categories: ["Troubleshooting"]
+categories: ["Infrastructure"]
 description: "A practical walkthrough of diagnosing repeated BSODs on a Windows machine using Event Viewer and minidump files, tracing the root cause to an NVIDIA driver TDR failure, and resolving it step by step."
 showToc: true
 ---

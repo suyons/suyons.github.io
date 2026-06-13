@@ -3,7 +3,7 @@ title: "Database ERD Design in Enterprise Projects: Designing for Validation"
 date: 2025-04-24
 draft: false
 tags: ["oracle", "database", "sql", "erd", "design"]
-categories: ["DevOps"]
+categories: ["Databases"]
 description: "How to approach ERD design in a multi-integration enterprise project, and why writing validation SQL queries against the schema is just as important as the design itself."
 showToc: true
 ---
