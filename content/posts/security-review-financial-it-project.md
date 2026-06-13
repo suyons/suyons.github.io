@@ -4,7 +4,7 @@ date: 2025-07-31
 draft: false
 tags: ["security", "devops", "compliance", "enterprise", "financial"]
 categories: ["DevOps"]
-description: "The security review (보안성 심의) process in Korean financial IT projects: what gets reviewed, what gets blocked, how long it takes, and how to prepare so you are not the bottleneck."
+description: "The security review process in Korean financial IT projects: what gets reviewed, what gets blocked, how long it takes, and how to prepare so you are not the bottleneck."
 showToc: true
 ---
 
