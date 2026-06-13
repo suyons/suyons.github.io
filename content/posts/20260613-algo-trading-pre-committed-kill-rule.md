@@ -61,3 +61,5 @@ The single most useful thing I built in this entire project wasn't a signal or a
 If you take one thing from the whole series: **decide what failure looks like, in falsifiable numbers, while you're still calm.** Define the breakeven. Demand a margin above it. Account for the correlation in your own data so a lucky streak can't masquerade as proof. Use the optimistic bound so you can never claim you were robbed by bad luck. And then, when the number prints, do the thing you already decided to do.
 
 I built an algorithmic trading system for seven and a half months. It works exactly as designed and loses money, because the design's edge is smaller than the unavoidable gap between testing and trading. Writing the kill rule first is what let me say that plainly instead of feeding it another month. That's the skill the project was actually for.
+
+The kill rule ended the strategy. The next and final post is the bigger conclusion it forced — [why I'm closing the derivatives accounts entirely and moving to spot](/posts/20260613-algo-trading-closing-derivatives-trading-spot/).
