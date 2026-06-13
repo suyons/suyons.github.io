@@ -1,0 +1,56 @@
+{{- /* giscus comments + reactions — rendered at the bottom of each article */ -}}
+<div id="giscus-container" class="giscus"></div>
+<script>
+  (function () {
+    var GISCUS_ORIGIN = "https://giscus.app";
+
+    // PaperMod stores the active theme on <html data-theme="light|dark">.
+    // Dark uses giscus' "transparent_dark" so the iframe background falls
+    // through to the page background, matching PaperMod's dark canvas exactly.
+    function giscusTheme() {
+      return document.documentElement.dataset.theme === "dark" ? "transparent_dark" : "light";
+    }
+
+    function pushTheme() {
+      var frame = document.querySelector("iframe.giscus-frame");
+      if (frame && frame.contentWindow) {
+        frame.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: giscusTheme() } } },
+          GISCUS_ORIGIN
+        );
+      }
+    }
+
+    var s = document.createElement("script");
+    s.src = "https://giscus.app/client.js";
+    s.setAttribute("data-repo", "suyons/suyons.github.io");
+    s.setAttribute("data-repo-id", "R_kgDOSh1eGw");
+    s.setAttribute("data-category", "Announcements");
+    s.setAttribute("data-category-id", "DIC_kwDOSh1eG84C_Ec_");
+    s.setAttribute("data-mapping", "pathname");
+    s.setAttribute("data-strict", "0");
+    s.setAttribute("data-reactions-enabled", "1");
+    s.setAttribute("data-emit-metadata", "0");
+    s.setAttribute("data-input-position", "bottom");
+    s.setAttribute("data-theme", giscusTheme());
+    s.setAttribute("data-lang", "en");
+    s.setAttribute("data-loading", "lazy");
+    s.crossOrigin = "anonymous";
+    s.async = true;
+    document.getElementById("giscus-container").appendChild(s);
+
+    // When giscus first finishes loading, align it to the current theme
+    // (covers lazy-loading and any toggle made before the iframe existed).
+    var synced = false;
+    window.addEventListener("message", function (e) {
+      if (e.origin !== GISCUS_ORIGIN || !e.data || !e.data.giscus) return;
+      if (!synced) { synced = true; pushTheme(); }
+    });
+
+    // Re-sync on every theme toggle by watching <html data-theme>.
+    new MutationObserver(pushTheme).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"]
+    });
+  })();
+</script>
