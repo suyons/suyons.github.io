@@ -1,0 +1,31 @@
+{{- define "main" }}
+<div class="not-found-page">
+  <div class="nf-code">404</div>
+  <h1 class="nf-title">This page took a wrong turn</h1>
+  <p class="nf-desc">
+    The page you’re looking for has been moved, deleted, or never existed.
+    Might be a stale link, or a typo in the URL.
+  </p>
+
+  <nav class="nf-actions">
+    <a class="nf-btn nf-btn-primary" href="{{ "" | absLangURL }}">Home</a>
+    <a class="nf-btn" href="{{ "posts/" | absLangURL }}">All posts</a>
+    <a class="nf-btn" href="{{ "search/" | absLangURL }}">Search</a>
+  </nav>
+
+  {{- $recent := first 5 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+  {{- with $recent }}
+  <section class="nf-recent">
+    <h2 class="nf-recent-title">Recent posts</h2>
+    <ul class="nf-recent-list">
+      {{- range . }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+</div>
+{{- end }}{{/* end main */ -}}
