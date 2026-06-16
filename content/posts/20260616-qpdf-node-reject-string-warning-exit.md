@@ -13,10 +13,10 @@ showToc: true
 A document backend renders a spreadsheet-and-docx template to PDF, then post-processes the result: stamp a few images on with [pdf-lib](https://github.com/Hopding/pdf-lib), then encrypt it with [qpdf](https://qpdf.sourceforge.io/) so printing can be locked down. One print endpoint started returning a 501 with this body:
 
 ```
-PDF 후처리 실패: undefined
+PDF post-process failed: undefined
 ```
 
-Translated: *PDF post-processing failed: undefined.* The word that matters is `undefined`, and it survives translation intact.
+The word that matters is `undefined`.
 
 That `undefined` is not a missing config value or an unset variable. It's a specific, readable signal about *how* the error was thrown — and once you learn to read it, it points straight at the bug. The handler looked like this:
 
