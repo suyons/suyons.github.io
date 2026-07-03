@@ -544,7 +544,7 @@ showToc: true
 
 1. The raw IP URL works but isn't very shareable. Let's attach a domain.
 
-2. I searched for `suyons` on [Gabia](https://domain.gabia.com/) and bought a cheap domain:
+2. I searched for `example` on [Gabia](https://domain.gabia.com/) and bought a cheap domain:
 
    ![Gabia domain purchase](/images/deploying-react-spring-from-home-laptop/2024-11-24-21-08-20.png)
 
@@ -793,22 +793,22 @@ showToc: true
        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
        <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
        <style>a { text-decoration: none; }</style>
-       <title>Sooyoung</title>
+       <title>Your Name</title>
      </head>
      <body>
        <header>
          <nav>
-           <a href="https://example.com"><h2>Sooyoung</h2></a>
+           <a href="https://example.com"><h2>Your Name</h2></a>
            <ul>
-             <li><a href="https://www.github.com/suyons" target="_blank">GitHub ↗</a></li>
+             <li><a href="https://github.com/yourname" target="_blank">GitHub ↗</a></li>
            </ul>
          </nav>
-         <h1>👋 Hello, I'm Sooyoung</h1>
+         <h1>👋 Hello, I'm Your Name</h1>
          <p>Thanks for stopping by.</p>
          <br />
          <p>
            <a href="https://blog.example.com" target="_blank"><i>Blog</i></a>
-           <a href="mailto:suyons@pm.me" target="_blank"><b>Email</b></a>
+           <a href="mailto:you@example.com" target="_blank"><b>Email</b></a>
          </p>
        </header>
        <main>
@@ -837,7 +837,7 @@ showToc: true
        </main>
        <footer>
          <hr />
-         <p>Made by <a href="https://www.github.com/suyons" target="_blank">Sooyoung ↗</a></p>
+         <p>Made by <a href="https://github.com/yourname" target="_blank">Your Name ↗</a></p>
        </footer>
      </body>
    </html>
