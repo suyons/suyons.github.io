@@ -8,7 +8,7 @@ description: "Four separate bugs in an HTTP-to-Modbus TCP bridge, all traceable 
 showToc: true
 ---
 
-I spent a session hardening an HTTP-to-Modbus TCP bridge — a small Express service that relays values from battery management system (BMS) controllers to an internal web app. What began as "point it at a local test server" turned into four separate bugs, each traceable to the same root mistake: inventing structure the wire protocol never provided.
+I spent a session hardening an HTTP-to-Modbus TCP bridge — a small Express service that relays values from building management system (BMS) controllers to an internal web app. What began as "point it at a local test server" turned into four separate bugs, each traceable to the same root mistake: inventing structure the wire protocol never provided.
 
 ## The simulator that lied
 
